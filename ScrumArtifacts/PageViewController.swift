@@ -42,6 +42,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
     // What should be shown next
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
        
+        // shouldnt be empty check
         guard let index = pages.index(of: viewController) else {
             return nil
         }
