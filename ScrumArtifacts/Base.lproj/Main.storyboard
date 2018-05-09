@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LVA-2V-bbp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HSG-db-V3I">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--1-->
+        <!--Page View Controller-->
+        <scene sceneID="pwA-NI-5em">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="HSG-db-V3I" customClass="PageViewController" customModule="ScrumArtifacts" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COt-hg-wW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-323"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="1" id="9pv-A4-QxB" userLabel="1" customClass="FirstViewController" customModule="ScrumArtifacts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fiboOne" title="View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FirstViewController" customModule="ScrumArtifacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,9 +33,6 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="200"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bgq-Qn-9gw" appends="YES" id="s7W-au-I6u"/>
-                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,118 +44,41 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jqf-BX-5dK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="bgq-Qn-9gw">
-                    <connections>
-                        <segue destination="2EQ-zJ-PWq" kind="show" id="S8u-Gc-N9f"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1688.8" y="-321.58920539730138"/>
         </scene>
-        <!--NavController-->
-        <scene sceneID="6ju-9C-fFW">
+        <!--View Controller-->
+        <scene sceneID="h6T-fo-zCX">
             <objects>
-                <navigationController title="NavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="LVA-2V-bbp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KgE-r1-45k">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="4qc-TS-OI3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gcg-Hr-FKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-322.48875562218893"/>
-        </scene>
-        <!--2-->
-        <scene sceneID="Ybd-F3-eGC">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dwc-yI-ify" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="TgA-tF-egz">
-                    <connections>
-                        <segue destination="KUs-qL-kms" kind="show" id="Av0-sb-HjO"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <viewController title="2" id="2EQ-zJ-PWq" userLabel="2" customClass="FirstViewController" customModule="ScrumArtifacts" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YVK-Z3-7oI">
+                <viewController storyboardIdentifier="fiboTwo" title="View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3yZ-p8-oyG" customClass="FirstViewController" customModule="ScrumArtifacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9R1-rF-Pn3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" text="2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="WyY-zq-Df2">
+                            <label opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" text="2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="XDz-rC-t2z">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="200"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="TgA-tF-egz" appends="YES" id="j2X-vM-t6j"/>
-                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WyY-zq-Df2" firstAttribute="top" secondItem="YVK-Z3-7oI" secondAttribute="top" id="9BJ-e2-zwv"/>
-                            <constraint firstAttribute="trailing" secondItem="WyY-zq-Df2" secondAttribute="trailing" id="DfF-zR-DKp"/>
-                            <constraint firstItem="WyY-zq-Df2" firstAttribute="leading" secondItem="YVK-Z3-7oI" secondAttribute="leading" id="ipj-cq-7X1"/>
-                            <constraint firstAttribute="bottom" secondItem="WyY-zq-Df2" secondAttribute="bottom" id="uYo-94-Yyi"/>
+                            <constraint firstAttribute="bottom" secondItem="XDz-rC-t2z" secondAttribute="bottom" id="1y5-BX-GQQ"/>
+                            <constraint firstItem="XDz-rC-t2z" firstAttribute="top" secondItem="9R1-rF-Pn3" secondAttribute="top" id="BwQ-O0-WPr"/>
+                            <constraint firstItem="XDz-rC-t2z" firstAttribute="leading" secondItem="9R1-rF-Pn3" secondAttribute="leading" id="Twz-VX-1Bt"/>
+                            <constraint firstAttribute="trailing" secondItem="XDz-rC-t2z" secondAttribute="trailing" id="phG-bF-lsj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3Wf-3s-Nar"/>
+                        <viewLayoutGuide key="safeArea" id="k9l-d0-VHm"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpO-DH-CXS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2500" y="-322"/>
-        </scene>
-        <!--3-->
-        <scene sceneID="BtQ-lM-Kbf">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kay-6I-tO5" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="O6b-rx-OTM">
-                    <connections>
-                        <segue destination="9pv-A4-QxB" kind="show" id="4zW-3y-GWW"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <viewController title="3" id="KUs-qL-kms" userLabel="3" customClass="FirstViewController" customModule="ScrumArtifacts" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="om6-kx-b16">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" text="3" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lu4-HR-bDe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="200"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="O6b-rx-OTM" appends="YES" id="knE-SF-j4a"/>
-                                </connections>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Lu4-HR-bDe" secondAttribute="trailing" id="4MZ-2f-brN"/>
-                            <constraint firstItem="Lu4-HR-bDe" firstAttribute="leading" secondItem="om6-kx-b16" secondAttribute="leading" id="WFQ-G4-LTn"/>
-                            <constraint firstAttribute="bottom" secondItem="Lu4-HR-bDe" secondAttribute="bottom" id="ekI-Py-yg2"/>
-                            <constraint firstItem="Lu4-HR-bDe" firstAttribute="top" secondItem="om6-kx-b16" secondAttribute="top" id="mgU-fF-lJX"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Hun-AS-jsl"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="3295" y="-322"/>
+            <point key="canvasLocation" x="2319" y="-323"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="first" width="30" height="30"/>
-    </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="4qc-TS-OI3"/>
-    </inferredMetricsTieBreakers>
 </document>
